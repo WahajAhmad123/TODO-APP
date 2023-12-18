@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@4/minimal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <title>Todo Application</title>
+</head>
+<body style="background-image: url('./All images/todo-back.jpg');">
+    <div id="signup" class="container" style="display: block;">
+         <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            
+            <div class="wraper col-md-6">
+                <form action="" id="signUpform">
+                    <h1><i class="fa-regular fa-rectangle-list"></i></h1>
+                <h1>Sign up </h1>
+                <p id="alert" style="font-size: 20px;  margin: 0; padding: 2px;"></p>
+                <div class="input-box inp">
+                    <input type="text" placeholder="Enter your username" id="username"><i style="font-size: 25px;" id="div1"></i>
+                    <!-- <span id="div1" style="font-size: 20px;  margin: 0; padding: 2px; padding-left: 3px;padding-right: 3px;"></span> -->
+                    <!-- <i class="fa-solid fa-user id2"></i>     -->
+                </div>
+                <div class="input-box inp">
+                    <input type="text" placeholder="Enter your email" id="email"><br><i style="font-size: 25px;" id="div2"></i>
+                    <!-- <i class="fa-solid fa-user id2"></i>     -->
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter your password" id="password"><br><i style="font-size: 20px;" id="div3"></i>
+                    <!-- <i class="fa-solid fa-lock id">=</i> -->
+                </div>
+                <button class="btn" id="signUpBtn" onclick="signUp()">Sign up</button>
+                <div class="signup-link">
+                    <p>Already have an account? click here <a onclick="ab()" href="#">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="login container" id="login" style="display: none;">
+     <div class="row">
+        <div class="col-md-3"></div>
+
+            <div class="wraper col-md-6">
+                <form action="" id="btn2">
+                    <h1><i class="fa-regular fa-rectangle-list"></i></h1>
+                    <h1>Login</h1>
+                    <p id="alert2" style="font-size: 20px;  margin: 0; padding: 2px;"></p>
+                    <div class="input-box inp">
+                        <input type="text" placeholder="Enter your email" id="loginemail">
+                        <!-- <i class="fa-solid fa-user id2"></i>     -->
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Enter your password" id="loginpassword">
+                        <!-- <i class="fa-solid fa-lock id"></i> -->
+                </div>
+                <button id="loginBtn" class="btn" onclick="login()">Login</button>
+                <div class="signup-link">
+                    <p>Don't have an account? click here <a onclick="cd()" href="#">Sign up</a></p>
+                </div>
+            </form>
+            </div>
+
+        
+     </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

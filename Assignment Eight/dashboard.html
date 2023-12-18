@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@4/minimal.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css" integrity="sha256-VJuwjrIWHWsPSEvQV4DiPfnZi7axOaiWwKfXaJnR5tA=" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Todo Application</title>
+</head>
+<body class="background">
+  <div class=" container-fluid">
+      
+        <!-- <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div> -->
+        
+        
+        <div class="row">
+        <div class="col-md-12 d-flex justify-content-end">
+            <button  class=" btn btn-danger px-5" onclick="logOut()">Logout</button>
+        </div>
+     <div class="col-md-12">
+         <main>
+             <div class="box mytodo">
+                <h1 id="userTitle"></h1>
+                 <h1>TODO LIST APPLICATION</h1>
+                 <div class="main text-center input-value" >
+                     <input type="text" class="inputval" id="item" autofocus placeholder="Enter Your Todo ">
+                     <button class="addtodo btn btn-primary" onclick="addTodoItem()">Add todo</button>
+                     <button class=" clearTask btn btn-danger" onclick="cleartask()">Clear All todo</button>
+
+                 </div>
+                 <div class="todoListItem">
+
+
+                 </div>
+             </div>
+         </main>
+         
+     </div>
+    </div>
+    </div>          
+
+
+<!-- <div class="todoList">
+    <p class="ptext"></p>
+    <button class="deleteTask" onclick="deleteItem(${index})">X</button>
+</div> -->
+
+
+
+
+
+
+
+
+
+<script src="dashboard.js"></script>
+</body>
+</html>
